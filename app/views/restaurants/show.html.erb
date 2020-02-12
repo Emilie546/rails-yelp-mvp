@@ -1,0 +1,22 @@
+<div class="container">
+  <nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+    <div class="btn btn-outline-primary">
+      <%= link_to 'Back to list', restaurants_path %>
+    </div>
+  </nav>
+
+  <h2><%= @restaurant.name %></h2>
+  <br>
+
+  <p><%= @restaurant.address %></p>
+  <br>
+  <p><%= @restaurant.category %></p>
+  <br>
+  <p><%= @restaurant.phone_number %></p>
+  <br>
+
+  <div class="btn btn-outline-primary">
+    <%= link_to 'Add review',  new_restaurant_review_path(@restaurant) %>
+  </div>
+</div>
